@@ -43,11 +43,11 @@ ExpenseTracker/
 
 ### 🛠 Database Setup
 
-1. **Create a database** named `expense_db` (or any name you prefer):
+1. **Create a database** named `expense_tracker` (or any name you prefer):
 
 ```sql
-CREATE DATABASE expense_db;
-USE expense_db;
+CREATE DATABASE expense_tracker;
+USE expense_tracker;
 
 Create the expense table:
 
@@ -58,6 +58,8 @@ CREATE TABLE expense (
     amount DOUBLE,
     description TEXT
 );
+```
+---
 
 🧪 Example Operations
 Add Expense
