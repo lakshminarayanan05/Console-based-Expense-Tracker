@@ -7,16 +7,30 @@ A simple console-based Expense Tracker application built using **Java**, **JDBC*
 ## 📁 Project Structure
 
 ExpenseTracker/
-│
-├── dao/
-│ └── ExpenseDAO.java # Handles all DB operations
-│
-├── model/
-│ └── Expense.java # Expense entity class
-│
-├── DBConnection.java # Manages database connection
-├── Main.java # Console-based UI
 
+│
+
+├── dao/
+
+│ └── ExpenseDAO.java # Handles all DB operations
+
+│
+
+├── model/
+
+│ └── Expense.java # Expense entity class
+
+│
+
+├── ui/
+
+│ └── Main.java # Handles user input/output operations
+
+│
+
+├── DBConnection.java # Manages database connection
+
+├── Main.java # Console-based UI
 
 ---
 
@@ -54,14 +68,15 @@ Create the expense table:
 CREATE TABLE expense (
     id INT PRIMARY KEY AUTO_INCREMENT,
     date DATE,
-    category VARCHAR(100),
+    category VARCHAR(30),
     amount DOUBLE,
-    description TEXT
+    description VARCHAR(100)
 );
 ```
 ---
 
-🧪 Example Operations
+## 🧪 Example Operations
+
 Add Expense
 Input: Date, Category, Amount, Description
 
@@ -80,12 +95,12 @@ Input: ID
 
 Action: Modify or delete the matching expense.
 
-📌 Future Enhancements
+## 📌 Future Enhancements
     GUI using JavaFX or Swing
     Export reports as PDF/CSV
     User authentication system
     Web-based version using Spring Boot
 
-Contributor:
+## 🙍‍♂️ Contributor:
 
-Lakshmi Narayanan N
+### Lakshmi Narayanan N
